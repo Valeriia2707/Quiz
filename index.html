@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style/reset.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="quiz-page">
+        <header class="quiz-page__header">
+            <div class="quiz-page__language">
+                <a href="" class="quiz-page__language-link">English</a>
+            </div>
+            <h1 class="quiz-page__title">
+                Personality test by best programmers
+            </h1>
+            <p class="quiz-page__autors">
+                Danisimo & Liri Hohil
+            </p>
+        </header>
+        
+        <section class="quiz-page__cards">
+            <div class="cards__item">
+                <img src="./img/Vector.svg" alt="" class="cards__icon">
+                <p class="cards__text">
+                    It takes very little of your 
+                    time, so easy.
+                </p>
+            </div>
+            <div class="cards__item">
+                <img src="./img/Vector (1).svg" alt="" class="cards__icon">
+                <p class="cards__text">
+                    Please be honest in your answer. 
+                    (Even if you don't like...)
+                </p>
+            </div>
+            <div class="cards__item">
+                <img src="./img/Group.svg" alt="" class="cards__icon">
+                <p class="cards__text">
+                    Try not to leave a “neutral” 
+                    response.
+                </p>
+            </div>
+        </section>
+
+        <section class="quiz-page__progress">
+            <div class="progress__wrap">
+            <p class="progress__percentage">0%</p>
+            <div class="progress__bar">
+                <div class="progress__fill" id="progressFill"></div>
+            </div>
+            </div>
+        </section>
+
+        <section class="quiz-page__questions quiz-page__questions--active" id="1">
+            <div class="questions__borderline"></div>
+            <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam soluta doloremque aliquam, qui quia eius velit minus neque! Perferendis molestiae, fugiat sint vitae aspernatur facilis debitis dignissimos facere reiciendis temporibus?</p>
+            <div class="questions__answers">
+                <p class="questions__label question__label--agree">Agree</p>
+                <div class="questions__options">
+                    <button class="questions__option  questions__option--totaly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--partly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--neutral" onclick="buttonsClick(this, 'neutral')"></button>
+                    <button class="questions__option  questions__option--partly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--totaly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                </div>
+                <p class="questions__label question__label--disagree">Disagree</p>
+            </div>
+            <div class="questions__borderline"></div>
+        </section>
+        <section class="quiz-page__questions" id="2">
+            <div class="questions__borderline"></div>
+            <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam soluta doloremque aliquam, qui quia eius velit minus neque! Perferendis molestiae, fugiat sint vitae aspernatur facilis debitis dignissimos facere reiciendis temporibus?</p>
+            <div class="questions__answers">
+                <p class="questions__label question__label--agree">Agree</p>
+                <div class="questions__options">
+                    <button class="questions__option  questions__option--totaly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--partly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--neutral" onclick="buttonsClick(this, 'neutral')"></button>
+                    <button class="questions__option  questions__option--partly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--totaly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                </div>
+                <p class="questions__label question__label--disagree">Disagree</p>
+            </div>
+            <div class="questions__borderline"></div>
+        </section>
+        <section class="quiz-page__questions" id="3">
+            <div class="questions__borderline"></div>
+            <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam soluta doloremque aliquam, qui quia eius velit minus neque! Perferendis molestiae, fugiat sint vitae aspernatur facilis debitis dignissimos facere reiciendis temporibus?</p>
+            <div class="questions__answers">
+                <p class="questions__label question__label--agree">Agree</p>
+                <div class="questions__options">
+                    <button class="questions__option  questions__option--totaly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--partly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--neutral" onclick="buttonsClick(this, 'neutral')"></button>
+                    <button class="questions__option  questions__option--partly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--totaly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                </div>
+                <p class="questions__label question__label--disagree">Disagree</p>
+            </div>
+            <div class="questions__borderline"></div>
+        </section>
+        <section class="quiz-page__questions" id="4">
+            <div class="questions__borderline"></div>
+            <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam soluta doloremque aliquam, qui quia eius velit minus neque! Perferendis molestiae, fugiat sint vitae aspernatur facilis debitis dignissimos facere reiciendis temporibus?</p>
+            <div class="questions__answers">
+                <p class="questions__label question__label--agree">Agree</p>
+                <div class="questions__options">
+                    <button class="questions__option  questions__option--totaly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--partly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--neutral" onclick="buttonsClick(this, 'neutral')"></button>
+                    <button class="questions__option  questions__option--partly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--totaly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                </div>
+                <p class="questions__label question__label--disagree">Disagree</p>
+            </div>
+            <div class="questions__borderline"></div>
+        </section>
+        <section class="quiz-page__questions" id="5">
+            <div class="questions__borderline"></div>
+            <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam soluta doloremque aliquam, qui quia eius velit minus neque! Perferendis molestiae, fugiat sint vitae aspernatur facilis debitis dignissimos facere reiciendis temporibus?</p>
+            <div class="questions__answers">
+                <p class="questions__label question__label--agree">Agree</p>
+                <div class="questions__options">
+                    <button class="questions__option  questions__option--totaly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--partly-agree" onclick="buttonsClick(this, 'green')"></button>
+                    <button class="questions__option  questions__option--neutral" onclick="buttonsClick(this, 'neutral')"></button>
+                    <button class="questions__option  questions__option--partly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--disagree" onclick="buttonsClick(this, 'red')"></button>
+                    <button class="questions__option  questions__option--totaly-disagree" onclick="buttonsClick(this, 'red')"></button>
+                </div>
+                <p class="questions__label question__label--disagree">Disagree</p>
+            </div>
+            <div class="questions__borderline"></div>
+        </section>
+        <div class="quiz-page__next-page">
+        <button class="quiz-page__button">
+            Next
+        </button>
+        </div>
+        <footer class="quiz-page__footer">
+
+        </footer>
+    </div>
+    <script src="./JavaScript/index.js"></script>
+</body>
+</html>
