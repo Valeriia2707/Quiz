@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Style/reset.css">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="./Russian.css">
+    <title>Тест</title>
+</head>
+<body>
+    <div class="quiz-page">
+        <header class="quiz-page__header">
+            <div id="pisko-overlay">
+                <div id="pisko">
+                    <div>
+                        <a href="../index.html" display="block">Англиский</a>
+                    </div>
+                    <div>
+                        <a href="./Languages/ukrainian.html" display="block">Украинский</a>
+                    </div>
+                    <div>
+                        <a href="" display="block">Русский</a>
+                    </div>
+                    <div>
+                        <a href="./Languages/belarussian.html" display="block">Белорусский</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-page__language">
+                <a href="#changeLanguage" class="quiz-page__language-link" onclick ="showPopup()" >Русский</a>
+            </div>
+            <h1 class="quiz-page__title">
+                Подивись, суко, ти обісцявся
+                
+            </h1>
+            <p class="quiz-page__autors">
+                Твій в'ялий орешник забавляє нас
+            </p>
+        </header>
+        <section>
+            <audio id="sound" src="../sounds/Potyznist.mp3" autoplay></audio>
+            <div class="quiz-page__img">
+            <img src="../img/ukrayina-ukraina-ukraine-flag-6956.jpg" alt="" width="1600" height="900">
+            </div>
+        </section>
+        
+    </div>
+    
+<script>
+  // Для деяких браузерів може знадобитися user interaction.
+  // Можемо спробувати відтворити після завантаження.
+    window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('sound');
+    audio.play().catch(e => {
+        console.log("Браузер заблокував автозапуск звуку:", e);
+    });
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JavaScript/variables.js"></script>
+    <script src="../JavaScript/index.js"></script>
+</body>
+</html>

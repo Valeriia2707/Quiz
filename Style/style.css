@@ -13,6 +13,27 @@ body{
 .quiz-page__header {
     
 }
+
+#pisko-overlay {
+    position: relative;
+    top: 93px;
+    left: 7%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#pisko {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 .quiz-page__language {
     text-align: right;
     margin-bottom: 157px;
@@ -177,6 +198,22 @@ body{
     height: 82px;
     border:solid 6px #d43b3b;
 }
+.quiz-page__chart-wrap{
+    height: 500px;
+    max-width: 500px;
+    margin: auto;
+    display: none;
+}
+.quiz-page__chart-wrap--active{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.quiz-page__chart{
+    width: 900px;
+    height: 1000px;;
+}
+
 .quiz-page__next-page {
     display: flex;
     justify-content: center;

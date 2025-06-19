@@ -1,0 +1,16 @@
+body{
+    font-family: "M PLUS 1p", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.quiz-page__img{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top:110px;
+    justify-content: center;
+}
+img{
+        border: 3px solid black;
+}

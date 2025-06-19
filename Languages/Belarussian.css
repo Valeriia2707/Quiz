@@ -1,0 +1,21 @@
+body{
+    font-family: "M PLUS 1p", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.quiz-page__title {
+    font-size: 43px ;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.quiz-page__autors {
+    font-size: 26px;
+    margin-bottom: 120px;
+    color: #fff;
+}
+.quiz-page__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
